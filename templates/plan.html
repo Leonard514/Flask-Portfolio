@@ -1,0 +1,28 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Group Project Plan" %}
+
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here, bootstrap is a wise choice ->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>Group Project Plan</strong></h1>
+        <p class="text-secondary">This is the scrum plan for our group.</p>
+        <ol>
+            <li>Program Purpose and Function: The purpose of our jeopardy spin-off project is mostly for entertainment. As for input or output, we could make the questions and have the user input the answers, then depending on whether the question was answered correctly along with other parameters (possibly time or an answer streak), the output is the given answer, whether it was correct or incorrect, the correct answer (if incorrect), and points. The way this would function is it would store the inputted answer into a variable and compare it to a variable where the correct answer is stored</li>
+            <li>Data Abstraction: </li>
+            <li>Managing Complexity: A list will be used to store the correct answers </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ol>
+    </div>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
