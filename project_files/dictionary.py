@@ -1,3 +1,6 @@
+
+
+
 # List of general questions
 generalQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear of ______", "answer": "Animals"},
 {"moneyvalue": "200", "question": "Pierre Augustine Caron de Baumarchais play what Opera based on it", "answer": "Barber Of Seville"},

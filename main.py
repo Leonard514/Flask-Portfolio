@@ -24,6 +24,9 @@ def stub():
 @app.route('/group-plan/')  # connects /stub/ URL to stub() function
 def plan():
     return render_template("plan.html")
+@app.route('/jeopardy-project/')  # connects /stub/ URL to stub() function
+def project():
+    return render_template("jeopardy.html")
 
 # this runs the application on the development server
 if __name__ == "__main__":
