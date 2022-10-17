@@ -1,8 +1,8 @@
 
 
 
-# List of general questions
-generalQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear of ______", "answer": "Animals"},
+# List of General Questions
+GeneralQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear of ______", "answer": "Animals"},
 {"moneyvalue": "200", "question": "Pierre Augustine Caron de Baumarchais plays what Opera based on it", "answer": "Barber Of Seville"},
 {"moneyvalue": "300", "question": "Hang on Sloopy' was the official rock song of which band", "answer": "Ohio"},
 {"moneyvalue": "400", "question": "When is Turkey traditionally eaten in America", "answer": "Thanksgiving"},
@@ -11,7 +11,7 @@ generalQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear 
 {"moneyvalue": "700", "question": "What was founded in the UK 1694 because of war with France", "answer": "Bank Of England"}]
 
 
-# List of Math questions
+# List of Math Questions
 MathQuestionList = [{"moneyvalue": "100", "question": "This Greek mathmetician supposedly designed a system of mirrors to set enemy ships on fire.", "answer": "Archimedes"},
 {"moneyvalue": "200", "question": "The sum of the first three digits of this irrational number is equal to the third power of one less than the first digit.", "answer": "pi"},
 {"moneyvalue": "300", "question": "This German mathematician famously feuded with Isaac Newton over which of them created calculus", "answer": "Gottfried Wilhem Leibniz"},
