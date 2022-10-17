@@ -32,53 +32,53 @@ CompSciQuestionList = [{"moneyvalue": "100", "question": "JavaScript requires al
 
 
 # List of Ireland Questions
-IrelandQuestionList = [{"moneyvalue": "100", "question": "This staple crop of Ireland was famously over exported to Great Britain in the early 1900s, leading to a famine.", "answer": "Potatoes"}
-{"moneyvalue": "200", "question": "Saint Patrick is known for driving all of these from Ireland, a metaphor for the Celts that kidnapped him as a child.", "answer": "Snakes"}
-{"moneyvalue": "300", "question": "Lucky! This alternate name for clovers is a staple in modern imaginations of the leprechaun.", "answer": "Shamrock"}
-{"moneyvalue": "400", "question": "Cathal Brugha was the first of these for Ireland and held this position for three years until his death in 1922.", "answer": "Prime Minister"}
-{"moneyvalue": "500", "question": "Bells of Ireland are known for symbolizing this quality, a much desired trait for the hapless.", "answer": "Good Luck"}
-{"moneyvalue": "600", "question": "#00FF00, #FFFFFF and #FFA500 is how you make the Irish flag in this color system.", "answer": "Hexadecimal"}
+IrelandQuestionList = [{"moneyvalue": "100", "question": "This staple crop of Ireland was famously over exported to Great Britain in the early 1900s, leading to a famine.", "answer": "Potatoes"},
+{"moneyvalue": "200", "question": "Saint Patrick is known for driving all of these from Ireland, a metaphor for the Celts that kidnapped him as a child.", "answer": "Snakes"},
+{"moneyvalue": "300", "question": "Lucky! This alternate name for clovers is a staple in modern imaginations of the leprechaun.", "answer": "Shamrock"},
+{"moneyvalue": "400", "question": "Cathal Brugha was the first of these for Ireland and held this position for three years until his death in 1922.", "answer": "Prime Minister"},
+{"moneyvalue": "500", "question": "Bells of Ireland are known for symbolizing this quality, a much desired trait for the hapless.", "answer": "Good Luck"},
+{"moneyvalue": "600", "question": "#00FF00, #FFFFFF and #FFA500 is how you make the Irish flag in this color system.", "answer": "Hexadecimal"},
 {"moneyvalue": "700", "question": "Britain gained rule over Ireland in the Anglo-Saxon invasion in this year where Henry II and Louis VII made an alliance through the betrothal of their children", "answer": "1169"}]
                        
                        
  # List of Video Game Questions
-VideoGameQuestionList = [{"moneyvalue": "100", "question": "The company Mojang, known for creating Minecraft, is based in this country, where one of its cities is the namesake for a condition where a captive identifies with their kidnapper.", "answer": "Sweden"}
-{"moneyvalue": "200", "question": "The creator of the Super Mario and Legend of Zelda franchises.", "answer": "Shigeru Miyamoto"}
-{"moneyvalue": "300", "question": "A staple character in pop culture since his 1938 conception, he starred in a famously bad game on the Nintendo 64 in 1999.", "answer": "Superman"}
-{"moneyvalue": "400", "question": "The notoriously difficult final boss of this game, along with its soundtrack, has skyrocketed this games popularity. Name the 2015 indie game where a child falls into the land of monsters.", "answer": "Undertale"}
-{"moneyvalue": "500", "question": "This 1994 fully CGI show was infamously given a continuation in 2018 centered around video games.", "answer": "ReBoot"}
-{"moneyvalue": "600", "question": "This actor had a prominent role in the marketing for the known disappointment Cyberpunk 2077. They are better known for their role in Bill and Ted’s Excellent Adventure.", "answer": "Keanu Reeves"}
+VideoGameQuestionList = [{"moneyvalue": "100", "question": "The company Mojang, known for creating Minecraft, is based in this country, where one of its cities is the namesake for a condition where a captive identifies with their kidnapper.", "answer": "Sweden"},
+{"moneyvalue": "200", "question": "The creator of the Super Mario and Legend of Zelda franchises.", "answer": "Shigeru Miyamoto"},
+{"moneyvalue": "300", "question": "A staple character in pop culture since his 1938 conception, he starred in a famously bad game on the Nintendo 64 in 1999.", "answer": "Superman"},
+{"moneyvalue": "400", "question": "The notoriously difficult final boss of this game, along with its soundtrack, has skyrocketed this games popularity. Name the 2015 indie game where a child falls into the land of monsters.", "answer": "Undertale"},
+{"moneyvalue": "500", "question": "This 1994 fully CGI show was infamously given a continuation in 2018 centered around video games.", "answer": "ReBoot"},
+{"moneyvalue": "600", "question": "This actor had a prominent role in the marketing for the known disappointment Cyberpunk 2077. They are better known for their role in Bill and Ted’s Excellent Adventure.", "answer": "Keanu Reeves"},
 {"moneyvalue": "700", "question": "The long running Kamen Rider franchise aired a season based on video games this year, more widely known for a large amounts of celebrities, including Prince and Alan Rickman, dying.", "answer": "2016"}]
                        
  
  # List of General Science Questions
-GenSciQuestionList = [{"moneyvalue": "100", "question": "Alan Turing, the inventor of the computer, was a World War II code breaker for this country.", "answer": "England"}
-{"moneyvalue": "200", "question": "Edward Jenner developed the smallpox vaccine after noticing the maids who had contracted this disease never contracted smallpox", "answer": "Cowpox"}
-{"moneyvalue": "300", "question": "Alfred Nobel, founder of the Nobel Prize, created this material used in construction and demolition.", "answer": "Dynamite"}
-{"moneyvalue": "400", "question": "Neodymium, a metal used in super magnets, is an element in this group on the periodic table.", "answer": "Lanthanides"}
-{"moneyvalue": "500", "question": "Marble is a metamorphic rock that came from this sedimentary rock.", "answer": "Limestone"}
-{"moneyvalue": "600", "question": "Cortisol is a hormone released by the brain when the body is undergoing this emotion.", "answer": "Stress"}
+GenSciQuestionList = [{"moneyvalue": "100", "question": "Alan Turing, the inventor of the computer, was a World War II code breaker for this country.", "answer": "England"},
+{"moneyvalue": "200", "question": "Edward Jenner developed the smallpox vaccine after noticing the maids who had contracted this disease never contracted smallpox", "answer": "Cowpox"},
+{"moneyvalue": "300", "question": "Alfred Nobel, founder of the Nobel Prize, created this material used in construction and demolition.", "answer": "Dynamite"},
+{"moneyvalue": "400", "question": "Neodymium, a metal used in super magnets, is an element in this group on the periodic table.", "answer": "Lanthanides"},
+{"moneyvalue": "500", "question": "Marble is a metamorphic rock that came from this sedimentary rock.", "answer": "Limestone"},
+{"moneyvalue": "600", "question": "Cortisol is a hormone released by the brain when the body is undergoing this emotion.", "answer": "Stress"},
 {"moneyvalue": "700", "question": "This animals scientific name is the same word twice.", "answer": "Skunk"}]
  
 
  # List of Literature Questions
-GenLitQuestionList = [{"moneyvalue": "100", "question": "The author of War of the Worlds and the Time Machine.", "answer": "H. G. Wells"}
-{"moneyvalue": "200", "question": "The protagonists in the John Green novel The Fault in Our Stars tastelessly kiss where this Dutch girl hid with her family during the Holocaust.", "answer": "Anne Frank"}
-{"moneyvalue": "300", "question": "Ponyboy Curtis recites a poem by this man, who also wrote The Road Not Taken.", "answer": "Robert Frost"}
-{"moneyvalue": "400", "question": "Mary Shelley’s 1816 Romantic novel The Modern Prometheus is said to have kickstarted this genre.", "answer": "Science Fiction"}
-{"moneyvalue": "500", "question": "The protagonist of this novel exchanges emails with a fellow gay student at his school, and risks getting outed by one of his peers. It recieved a film adaptation in 2018.", "answer": "Simon vs. the Homo Sapiens Agenda"}
-{"moneyvalue": "600", "question": "Khalil Gibran details his thoughts on society in his 1925 book named for this holy figure.", "answer": "Prophet"}
+GenLitQuestionList = [{"moneyvalue": "100", "question": "The author of War of the Worlds and the Time Machine.", "answer": "H. G. Wells"},
+{"moneyvalue": "200", "question": "The protagonists in the John Green novel The Fault in Our Stars tastelessly kiss where this Dutch girl hid with her family during the Holocaust.", "answer": "Anne Frank"},
+{"moneyvalue": "300", "question": "Ponyboy Curtis recites a poem by this man, who also wrote The Road Not Taken.", "answer": "Robert Frost"},
+{"moneyvalue": "400", "question": "Mary Shelley’s 1816 Romantic novel The Modern Prometheus is said to have kickstarted this genre.", "answer": "Science Fiction"},
+{"moneyvalue": "500", "question": "The protagonist of this novel exchanges emails with a fellow gay student at his school, and risks getting outed by one of his peers. It recieved a film adaptation in 2018.", "answer": "Simon vs. the Homo Sapiens Agenda"},
+{"moneyvalue": "600", "question": "Khalil Gibran details his thoughts on society in his 1925 book named for this holy figure.", "answer": "Prophet"},
 {"moneyvalue": "700", "question": "A chapter in this 1008 novel is completely blank to signify the death of the viewpoint character.", "answer": "The Tale of Genji"}]
   
   
 # List of Sports Questions
-SportsQuestionList = [{"moneyvalue": "100", "question": "In Soccer / Fútbol, which player has the most Ballen D’ors?", "answer": "Lionel Messi"}
-{"moneyvalue": "200", "question": "Who has the most touchdowns in NFL history?", "answer": "Jerry Rice"}
-{"moneyvalue": "300", "question": "Who won the 2018 Russia World Cup (Fútbol)?", "answer": "France"}
-{"moneyvalue": "400", "question": "Which two teams were in the 2021 NBA Finals? Name one or both.", "answer": "Milwaukee Bucks & Phoenix Suns"}
-{"moneyvalue": "500", "question": "Out of his 61 professional fights, how many fights did Muhhamad Ali win?", "answer": "56"}
-{"moneyvalue": "600", "question": "Tom Hanks says 'There’s no crying in baseball!' in this 1992 film.", "answer": "A Leauge of Their Own"}
+SportsQuestionList = [{"moneyvalue": "100", "question": "In Soccer / Fútbol, which player has the most Ballen D’ors?", "answer": "Lionel Messi"},
+{"moneyvalue": "200", "question": "Who has the most touchdowns in NFL history?", "answer": "Jerry Rice"},
+{"moneyvalue": "300", "question": "Who won the 2018 Russia World Cup (Fútbol)?", "answer": "France"},
+{"moneyvalue": "400", "question": "Which two teams were in the 2021 NBA Finals? Name one or both.", "answer": "Milwaukee Bucks & Phoenix Suns"},
+{"moneyvalue": "500", "question": "Out of his 61 professional fights, how many fights did Muhhamad Ali win?", "answer": "56"},
+{"moneyvalue": "600", "question": "Tom Hanks says 'There’s no crying in baseball!' in this 1992 film.", "answer": "A Leauge of Their Own"},
 {"moneyvalue": "700", "question": "The national sport of Pakistan, while not its most famous sport, was portrayed in the 2007 Bollywood film Chak de! India", "answer": "Field Hockey"}]
                        
-print(generalQuestionList)
-print(mathQuestionList)
+print(GeneralQuestionList)
+print(MathQuestionList)
