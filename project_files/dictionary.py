@@ -5,7 +5,7 @@
 GeneralQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear of ______", "answer": "Animals"},
 {"moneyvalue": "200", "question": "Pierre Augustine Caron de Baumarchais plays what Opera based on it", "answer": "Barber Of Seville"},
 {"moneyvalue": "300", "question": "Hang on Sloopy' was the official rock song of which band", "answer": "Ohio"},
-{"moneyvalue": "400", "question": "When is turkey traditionally eaten in America", "answer": "Thanksgiving"},
+{"moneyvalue": "400", "question": "When is Turkey traditionally eaten in America", "answer": "Thanksgiving"},
 {"moneyvalue": "500", "question": "What was Mozart's first name", "answer": "Wolfgang"},
 {"moneyvalue": "600", "question": "In the film 'Titanic', who did Leonardo DiCaprio play", "answer": "Jack"},
 {"moneyvalue": "700", "question": "What was founded in the UK 1694 because of war with France", "answer": "Bank Of England"}]
@@ -80,5 +80,5 @@ SportsQuestionList = [{"moneyvalue": "100", "question": "In Soccer / Fútbol, wh
 {"moneyvalue": "600", "question": "Tom Hanks says 'There’s no crying in baseball!' in this 1992 film.", "answer": "A Leauge of Their Own"}
 {"moneyvalue": "700", "question": "The national sport of Pakistan, while not its most famous sport, was portrayed in the 2007 Bollywood film Chak de! India", "answer": "Field Hockey"}]
                        
-print(generalQuestionList)
-print(mathQuestionList)
+print(GeneralQuestionList)
+print(MathQuestionList)
