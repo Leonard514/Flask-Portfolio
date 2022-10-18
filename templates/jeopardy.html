@@ -11,7 +11,7 @@
 
 
 
-<!-- Make Jeopardy Table -->
+<!-- Make Jeopardy Table - all styles borrowed from W3Schools -->
 <style>
 table, th, td {
   border: 1px solid black;
@@ -24,13 +24,38 @@ table.center {
 }
 </style>
 
+
+<!-- Button info (including pop-up code, script, buttons) borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
+
+<div class="form-popup" id="button1">
+  <form class="form-container">
+    <h1>Question</h1>
+
+    <h5>Test Question</h5>
+    <label for="ans"><b>Answer</b></label>
+    <input type="text" placeholder="Enter Answer" name="ans" required>
+
+    <button type="submit" class="btn">Submit Answer</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("button1").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("button1").style.display = "none";
+}
+</script>
+
 <table style="width:50%" class="center">
     <tr>
       <th></th>
       <th></th>
     </tr>
     <tr>
-      <td>$100</td>
+      <td><button class="open-button" onclick="openForm()">$100</button></td>
       <td>$100</td>
       <td>$100</td>
       <td>$100</td>
