@@ -11,7 +11,7 @@
 
 
 
-<!-- Make Jeopardy Table - all styles borrowed from W3Schools -->
+<!-- Make Jeopardy Table styles borrowed from W3Schools -->
 <style>
 table, th, td {
   border: 1px solid black;
@@ -29,15 +29,27 @@ table.center {
 
 <div class="form-popup" id="button1">
   <form class="form-container">
-    <h1>Question</h1>
-
     <h5>Test Question</h5>
-    <label for="ans"><b>Answer</b></label>
+    <label for="ans"><b>Answer: </b></label>
     <input type="text" placeholder="Enter Answer" name="ans" required>
-
-    <button type="submit" class="btn">Submit Answer</button>
+    <h5>
+    <h5><button type="submit" class="btn submit">Submit Answer</button></h5>
   </form>
 </div>
+
+<style>
+.form-container .submit {
+  background-color: rgb(12, 198, 12);
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 12.5%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+</style>
 
 <script>
 function openForm() {
@@ -48,6 +60,9 @@ function closeForm() {
   document.getElementById("button1").style.display = "none";
 }
 </script>
+
+
+<!-- This is the actual table -->
 
 <table style="width:50%" class="center">
     <tr>
