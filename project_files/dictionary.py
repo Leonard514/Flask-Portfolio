@@ -5,7 +5,7 @@
 GeneralQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear of ______", "answer": "Animals"},
 {"moneyvalue": "200", "question": "Pierre Augustine Caron de Baumarchais plays what Opera based on it", "answer": "Barber Of Seville"},
 {"moneyvalue": "300", "question": "Hang on Sloopy' was the official rock song of which band", "answer": "Ohio"},
-{"moneyvalue": "400", "question": "When is Turkey traditionally eaten in America", "answer": "Thanksgiving"},
+{"moneyvalue": "400", "question": "When is turkey traditionally eaten in America", "answer": "Thanksgiving"},
 {"moneyvalue": "500", "question": "What was Mozart's first name", "answer": "Wolfgang"},
 {"moneyvalue": "600", "question": "In the film 'Titanic', who did Leonardo DiCaprio play", "answer": "Jack"},
 {"moneyvalue": "700", "question": "What was founded in the UK 1694 because of war with France", "answer": "Bank Of England"}]
@@ -67,7 +67,7 @@ GenLitQuestionList = [{"moneyvalue": "100", "question": "The author of War of th
 {"moneyvalue": "300", "question": "Ponyboy Curtis recites a poem by this man, who also wrote The Road Not Taken.", "answer": "Robert Frost"},
 {"moneyvalue": "400", "question": "Mary Shelley’s 1816 Romantic novel The Modern Prometheus is said to have kickstarted this genre.", "answer": "Science Fiction"},
 {"moneyvalue": "500", "question": "The protagonist of this novel exchanges emails with a fellow gay student at his school, and risks getting outed by one of his peers. It recieved a film adaptation in 2018.", "answer": "Simon vs. the Homo Sapiens Agenda"},
-{"moneyvalue": "600", "question": "Khalil Gibran details his thoughts on society in his 1925 book named for this holy figure.", "answer": "Prophet"},
+{"moneyvalue": "600", "question": "Khalil Gibran details his thoughts on society in his 1925 book named for this holy position.", "answer": "Prophet"},
 {"moneyvalue": "700", "question": "A chapter in this 1008 novel is completely blank to signify the death of the viewpoint character.", "answer": "The Tale of Genji"}]
   
   
