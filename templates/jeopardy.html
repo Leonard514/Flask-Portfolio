@@ -22,12 +22,59 @@ table.center {
   margin-left: auto; 
   margin-right: auto;
 }
+
+button.center {
+  position: absolute;
+  bottom: 40%;
+  right: 50%;
+}
+
+/* makes submit button green */
+.form-container .submit {
+  background-color: rgb(12, 198, 12);
+}
+
+/* positioning of question form */
+.form-question {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+/* positioning of player forms */
+.form-player1 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 80%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.form-player2 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.form-player3 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 10%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
 </style>
 
 
 <!-- Button info (including pop-up code, script, buttons) borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
 
-<div class="form-popup" id="button">
+<!-- Question form stuff-->
+<div class="form-question" id="button">
   <form class="form-container">
     <h5>Test Question</h5>
     <label for="ans"><b>Answer: </b></label>
@@ -37,7 +84,7 @@ table.center {
   </form>
 </div>
 
-
+<!-- Player form stuff -->
 <div class="form-player1" id="player1">
   <form class="form-container">
     <label for="name"><b>Name: </b></label>
@@ -47,36 +94,35 @@ table.center {
   </form>
 </div>
 
+<div class="form-player2" id="player2">
+  <form class="form-container">
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
 
-<style>
-.form-container .submit {
-  background-color: rgb(12, 198, 12);
-}
-
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 25%;
-  right: 45%;
-  border: 3px solid rgb(0, 0, 0);
-}
-
-.form-player1 {
-  display: none;
-  position: fixed;
-  bottom: 1.25%;
-  right: 80%;
-  border: 3px solid rgb(0, 0, 0);
-}
-</style>
+<div class="form-player3" id="player3">
+  <form class="form-container">
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
 
 <script>
 function openForm() {
   document.getElementById("button").style.display = "block";
 }
 
+/* The stuff that happens when the play button is clicked */
 function displayPlayers() {
   document.getElementById("player1").style.display = "block";
+  document.getElementById("player2").style.display = "block";
+  document.getElementById("player3").style.display = "block";
+  document.getElementById("play-button").style.display = "none";
 }
 
 function closeForm() {
@@ -130,8 +176,8 @@ function closeForm() {
   </table>
 
 
-
-<h1><button class="play-button" onclick="displayPlayers()">Play Now!</button></h1>
+<!-- Play button stuff -->
+<h1><button class="center" id="play-button" onclick="displayPlayers()">Play Now!</button></h1>
 
 {% endblock %}
 
