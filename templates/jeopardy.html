@@ -64,7 +64,7 @@ table.center {
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 12.5%;
+  bottom: 25%;
   right: 45%;
   border: 3px solid rgb(0, 0, 0);
 }
@@ -72,8 +72,8 @@ table.center {
 .form-player1 {
   display: none;
   position: fixed;
-  bottom: 12.5%;
-  right: 95%;
+  bottom: 1.25%;
+  right: 80%;
   border: 3px solid rgb(0, 0, 0);
 }
 </style>
@@ -81,6 +81,10 @@ table.center {
 <script>
 function openForm() {
   document.getElementById("button").style.display = "block";
+}
+
+function displayPlayers() {
+  document.getElementById("player1").style.display = "block";
 }
 
 function closeForm() {
@@ -133,6 +137,9 @@ function closeForm() {
       </tr>
   </table>
 
+
+
+<h1><button class="play-button" onclick="displayPlayers()">Play Now!</button></h1>
 
 {% endblock %}
 
