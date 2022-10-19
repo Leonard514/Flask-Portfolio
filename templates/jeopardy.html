@@ -27,7 +27,7 @@ table.center {
 
 <!-- Button info (including pop-up code, script, buttons) borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
 
-<div class="form-popup" id="button1">
+<div class="form-popup" id="button">
   <form class="form-container">
     <h5>Test Question</h5>
     <label for="ans"><b>Answer: </b></label>
@@ -36,6 +36,17 @@ table.center {
     <h5><button type="submit" class="btn submit">Submit Answer</button></h5>
   </form>
 </div>
+
+
+<div class="form-player-1" id="button">
+  <form class="form-container">
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
+
 
 <style>
 .form-container .submit {
@@ -49,15 +60,23 @@ table.center {
   right: 45%;
   border: 3px solid rgb(0, 0, 0);
 }
+
+.form-player1 {
+  display: none;
+  position: fixed;
+  bottom: 2.5%;
+  right: 95%;
+  border: 3px solid rgb(0, 0, 0);
+}
 </style>
 
 <script>
 function openForm() {
-  document.getElementById("button1").style.display = "block";
+  document.getElementById("button").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("button1").style.display = "none";
+  document.getElementById("button").style.display = "none";
 }
 </script>
 
