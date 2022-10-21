@@ -43,6 +43,23 @@ button.center {
   border: 3px solid rgb(0, 0, 0);
 }
 
+.form-correct {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+
+.form-incorrect {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
 /* positioning of player forms */
 .form-player1 {
   display: none;
@@ -78,11 +95,24 @@ button.center {
   <form class="form-container">
     <h5>Test Question</h5>
     <label for="ans"><b>Answer: </b></label>
-    <input type="text" placeholder="Enter Answer" name="ans" required>
+    <input id="ansinput" type="text" placeholder="Enter Answer" name="ans">
     <h5>
-    <h5><button type="submit" class="btn submit">Submit Answer</button></h5>
+    <h5><button type="text" class="btn submit" onclick="checkAnswer()">Submit Answer</button></h5>
   </form>
 </div>
+
+<div class="form-correct" id="form-correct">
+  <form class="form-container">
+    <h5>PLAYERNAME answered correctly and gained $TEST!</h5>
+  </form>
+</div>
+
+<div class="form-incorrect" id="form-incorrect">
+  <form class="form-container">
+    <h5>PLAYERNAME answered incorrectly and lost $TEST!</h5>
+  </form>
+</div>
+
 
 <!-- Player form stuff -->
 <div class="form-player1" id="player1">
@@ -113,8 +143,16 @@ button.center {
 </div>
 
 <script>
+var input
+var correctans
+correctans = "hrar";
+
 function openForm() {
   document.getElementById("button").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("button").style.display = "none";
 }
 
 /* The stuff that happens when the play button is clicked */
@@ -125,8 +163,17 @@ function displayPlayers() {
   document.getElementById("play-button").style.display = "none";
 }
 
-function closeForm() {
-  document.getElementById("button").style.display = "none";
+function checkAnswer() {
+  correctans = "hrar";
+  let input = document.getElementById("ansinput").value;
+//  document.write(input)
+//  document.write(correctans)
+  if (input == correctans) {
+    document.getElementById("form-correct").style.display = "block";
+  } else {
+    document.getElementById("form-incorrect").style.display = "block";
+  }
+
 }
 </script>
 
@@ -139,39 +186,39 @@ function closeForm() {
       <th></th>
     </tr>
     <tr>
-      <td><button class="open-button" onclick="openForm()">$100</button></td>
-      <td>$100</td>
-      <td>$100</td>
-      <td>$100</td>
-      <td>$100</td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
     </tr>
     <tr>
-        <td>$200</td>
-        <td>$200</td>
-        <td>$200</td>
-        <td>$200</td>
-        <td>$200</td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
       </tr>
       <tr>
-        <td>$300</td>
-        <td>$300</td>
-        <td>$300</td>
-        <td>$300</td>
-        <td>$300</td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
       </tr>
       <tr>
-        <td>$400</td>
-        <td>$400</td>
-        <td>$400</td>
-        <td>$400</td>
-        <td>$400</td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
       </tr>
       <tr>
-        <td>$500</td>
-        <td>$500</td>
-        <td>$500</td>
-        <td>$500</td>
-        <td>$500</td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
       </tr>
   </table>
 
