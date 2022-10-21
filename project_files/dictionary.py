@@ -1,4 +1,7 @@
-
+# A few parts of the dictionaries to highlight
+# moneyvalue is the amount of dollars a player's score will increase/decrease when answering the question
+# question is self-explanatory
+# answer is self-explanatory
 
 
 # List of General Questions
