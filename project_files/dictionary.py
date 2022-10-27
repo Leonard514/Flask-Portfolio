@@ -17,10 +17,10 @@ GeneralQuestionList = [{"moneyvalue": "100", "question": "Zoophobia is the fear 
 # List of Math Questions
 MathQuestionList = [{"moneyvalue": "100", "question": "This Greek mathmetician supposedly designed a system of mirrors to set enemy ships on fire.", "answer": "Archimedes"},
 {"moneyvalue": "200", "question": "The sum of the first three digits of this irrational number is equal to the third power of one less than the first digit.", "answer": "pi"},
-{"moneyvalue": "300", "question": "This German mathematician famously feuded with Isaac Newton over which of them created calculus", "answer": "Gottfried Wilhem Leibniz"},
+{"moneyvalue": "300", "question": "If an equation has exactly one y-value for every x-value, it is a ...", "answer": "function"},
 {"moneyvalue": "400", "question": "It isn’t pi, but this Greek letter is commonly used to denote change", "answer": "delta"},
 {"moneyvalue": "500", "question": "This type of sum is named after a mathematician who specialized in geometry", "answer": "Riemann"},
-{"moneyvalue": "600", "question": "Nobel Prize winner and game theorist John Nash famously suffered from this mental disorder throughout his life", "answer": "schizophrenia"},
+{"moneyvalue": "600", "question": "This German mathematician famously feuded with Isaac Newton over which of them created calculus", "answer": "Gottfried Leibniz"},
 {"moneyvalue": "700", "question": "A type of ratio, this metal is known for its softness and luster", "answer": "Gold"}]
 
 
