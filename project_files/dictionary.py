@@ -76,10 +76,10 @@ GenLitQuestionList = [{"moneyvalue": "100", "question": "The author of War of th
   
 # List of Sports Questions
 SportsQuestionList = [{"moneyvalue": "100", "question": "In Soccer / Fútbol, which player has the most Ballen D’ors?", "answer": "Lionel Messi"},
-{"moneyvalue": "200", "question": "Who has the most touchdowns in NFL history?", "answer": "Jerry Rice"},
+{"moneyvalue": "200", "question": "Who has the most three pointers in NBA history?", "answer": "Steph Curry"},
 {"moneyvalue": "300", "question": "Who won the 2018 Russia World Cup (Fútbol)?", "answer": "France"},
-{"moneyvalue": "400", "question": "Which two teams were in the 2021 NBA Finals? Name one or both.", "answer": "Milwaukee Bucks & Phoenix Suns"},
-{"moneyvalue": "500", "question": "Out of his 61 professional fights, how many fights did Muhhamad Ali win?", "answer": "56"},
+{"moneyvalue": "400", "question": "Who has the most touchdowns in NFL history?", "answer": "Jerry Rice"},
+{"moneyvalue": "500", "question": "How much is a field goal worth on its own? (no touchdowns scored before)", "answer": "3"},
 {"moneyvalue": "600", "question": "Tom Hanks says 'There’s no crying in baseball!' in this 1992 film.", "answer": "A Leauge of Their Own"},
 {"moneyvalue": "700", "question": "The national sport of Pakistan, while not its most famous sport, was portrayed in the 2007 Bollywood film Chak de! India", "answer": "Field Hockey"}]
                        
