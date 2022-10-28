@@ -93,7 +93,7 @@ button.center {
 <!-- Question form stuff-->
 <div class="form-question" id="button">
   <form class="form-container">
-    <h5>Test Question</h5>
+    <h5 id="question-text">Test Question</h5>
     <label for="ans"><b>Answer: </b></label>
     <input type="text" placeholder="Enter Answer" name="ans" required>
     <h5>
@@ -148,7 +148,10 @@ var correctans
 correctans = "hrar";
 
 function openForm() {
-  document.getElementById("button").style.display = "block";
+  let button = document.getElementById("button")
+  button.style.display = "block";
+  let qText = document.getElementById("question-text");
+  qText.innerHTML = 
 }
 
 function closeForm() {
@@ -187,17 +190,17 @@ function checkAnswer() {
     </tr>
     <tr>
       <td><button onclick="openForm()">$100</button></td>
-      <td><button onclick="openForm()">$100</button></td>
-      <td><button onclick="openForm()">$100</button></td>
-      <td><button onclick="openForm()">$100</button></td>
-      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$200</button></td>
+      <td><button onclick="openForm()">$300</button></td>
+      <td><button onclick="openForm()">$400</button></td>
+      <td><button onclick="openForm()">$500</button></td>
     </tr>
     <tr>
+        <td><button onclick="openForm()">$100</button></td>
         <td><button onclick="openForm()">$200</button></td>
-        <td><button onclick="openForm()">$200</button></td>
-        <td><button onclick="openForm()">$200</button></td>
-        <td><button onclick="openForm()">$200</button></td>
-        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$500</button></td>
       </tr>
       <tr>
         <td><button onclick="openForm()">$300</button></td>
