@@ -1,91 +1,235 @@
-#HTML File
-<!DOCTYPE html>
-<html lang=”en”>
-<head>
-	<meta charset=”UTF-g”>
-	<meta name=”viewport” content=”width-device-width,
-	initial-scale-1.0”>
-	<meta http-equiv=”X-UA-Compatible” content=”ie-edge”>
-	<title>Calculator</title>
-	<link href=”styles.css” rel=”stylesheet”>
-	<script src=”script.js” defer></script>
-</head>
-<body>
-	<div class=”calculator-grid”>
-	<div class=”output”>
-		<div data-previous-operand class=”previous-operand”></div>
-		<div data-current-operand class=”current-operand”></div>
-	</div>
-	<button data-all-clear class=”span-two”>AC</button>
-	<button data-delete>DEL</button>
-	<button data-operation>/</button>
-	<button data-number>1</button>
-	<button data-number>2</button>
-	<button data-number>3</button>
-	<button data-operation>*</button>
-	<button data-number>4</button>
-	<button data-number>5</button>
-	<button data-number>6</button>
-	<button data-operation>+</button>
-	<button data-number>7</button>
-	<button data-number>8</button>
-	<button data-number>9</button>
-	<button data-operation>-</button>
-	<button data-number>.</button>
-	<button data-number>0</button>
-	<button>=</button>
-	<button data-equals class> class=”span-two”>=</button>
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Play Jeopardy!" %}
+
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+
+
+
+<!-- Make Jeopardy Table styles borrowed from W3Schools -->
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+button.center {
+  position: absolute;
+  bottom: 40%;
+  right: 50%;
+}
+
+/* makes submit button green */
+.form-container .submit {
+  background-color: rgb(12, 198, 12);
+}
+
+/* positioning of question form */
+.form-question {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.form-correct {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+
+.form-incorrect {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+/* positioning of player forms */
+.form-player1 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 80%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.form-player2 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 45%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.form-player3 {
+  display: none;
+  position: fixed;
+  bottom: 1.25%;
+  right: 10%;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+</style>
+
+
+<!-- Button info (including pop-up code, script, buttons) borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup_form-->
+
+<!-- Question form stuff-->
+<div class="form-question" id="button">
+  <form class="form-container">
+    <h5 id="question-text">Test Question</h5>
+    <label for="ans"><b>Answer: </b></label>
+    <input type="text" placeholder="Enter Answer" name="ans" required>
+    <h5>
+    <h5><button type="text" class="btn submit" onclick="checkAnswer()">Submit Answer</button></h5>
+  </form>
 </div>
-</body>
-</html>
-#CSS File
-*, *: :before, *: :after {
-	box-sizing: border-box;
-	font-family: Gotham Rounded, sans-seriff;
-	font-weight: normal;
+
+<div class="form-correct" id="form-correct">
+  <form class="form-container">
+    <h5>Good Job! Playername you earned: $TEST!</h5>
+  </form>
+</div>
+
+<div class="form-incorrect" id="form-incorrect">
+  <form class="form-container">
+    <h5>Sorry! Playername you lost: $TEST!</h5>
+  </form>
+</div>
+
+
+<!-- Player form stuff -->
+<div class="form-player1" id="player1">
+  <form class="form-container">
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
+
+<div class="form-player2" id="player2">
+  <form class="form-container">slack
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
+
+<div class="form-player3" id="player3">
+  <form class="form-container">
+    <label for="name"><b>Name: </b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <h5>
+    <h5>insert_money_variable_here</h5>
+  </form>
+</div>
+
+<script>
+var input
+var correctans
+correctans = "hrar";
+
+function openForm() {
+  let button = document.getElementById("button")
+  button.style.display = "block";
+  let qText = document.getElementById("question-text");
+  qText.innerHTML = 
 }
-Body {
-	Padding: 0;
-	Margin: 0;
-	background:linear-gradient(to right, #00AAFF, #00FF6C);
+
+function closeForm() {
+  document.getElementById("button").style.display = "none";
 }
-.calculator-grid {
-	Display: grid;
-	Justify-content: center;
-	Align-items: center;
-	Min-height: 100vh;
-	Grid-template-columns: repeat(4, 100px);
-	Grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+/* The stuff that happens when the play button is clicked */
+function displayPlayers() {
+  document.getElementById("player1").style.display = "block";
+  document.getElementById("player2").style.display = "block";
+  document.getElementById("player3").style.display = "block";
+  document.getElementById("play-button").style.display = "none";
 }
-.calculator-grid > button {
-	Cursor: pointer;
-	Font-size: 2rem;
-	Border: 1px solid white;
-	Outline: none;
-	Background-color: rgba(255, 255, 255, .75);
+
+function checkAnswer() {
+  correctans = "hrar";
+  let input = document.getElementById("ansinput").value;
+//  document.write(input)
+//  document.write(correctans)
+  if (input == correctans) {
+    document.getElementById("form-correct").style.display = "block";
+  } else {
+    document.getElementById("form-incorrect").style.display = "block";
+  }
+
 }
-.calculator-grid > button:hover {
-	Background-color: rgba(255, 255, 255, .9);
-}
-.span-two {
-	Grid-column: span 2;
-}
-.output {
-	Grid-column: 1 / -1;
-	Background-color: rgba(0, 0, 0, .75);
-	Display: flex;
-	Align-items: flex-end;
-	Justify-content: space-around;
-	Flex-direction: column;
-	Padding: 10 px;
-	Word-wrap: break-word;
-	Word-break: break-all;
-}
-.output .previous-operand {
-	Color: rgba(255, 255, 255, .75);
-	Font-size: 1.5rem;
-}
-.output .current-operand {
-	Color: white;
-	Font-size: 2.5rem;
-}
+</script>
+
+
+<!-- This is the actual table -->
+
+<table style="width:50%" class="center">
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+      <td><button onclick="openForm()">$100</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+        <td><button onclick="openForm()">$200</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+        <td><button onclick="openForm()">$300</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+        <td><button onclick="openForm()">$400</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+        <td><button onclick="openForm()">$500</button></td>
+      </tr>
+  </table>
+
+
+<!-- Play button stuff -->
+<h1><button class="center" id="play-button" onclick="displayPlayers()">Play Now!</button></h1>
+
+{% endblock %}
+
+{% block background %}
+{% endblock %} 
