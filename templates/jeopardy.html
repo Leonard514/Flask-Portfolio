@@ -1,111 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: home
+search_exclude: true
+image: images/nbalogo.jpeg
+---
 
+![download (3)](https://user-images.githubusercontent.com/111910633/199587728-71555f5f-9f08-447c-9806-b524cd58d961.png)
+
+This is the website of the NBA Group Project
+
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Simple Calculator Harsh Trivedi</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  gtag('config', 'UA-70447982-5');
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  background-color: #fffcc0;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #e3c7aa;
+}
+</style>
+</head>
+<body>
+
+<h2>Search Menu</h2>
+<p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#898989;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="https://thegerbil21.github.io/NBAD/hawks.html">Atlanta Hawks</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/celtics.html">Boston Celtics</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/nets.html">Brooklyn Nets</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/hornets.html">Charlotte Hornets</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/bulls.html">Chicago Bulls</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/cavaliers.html">Cleveland Cavaliers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/mavericks.html">Dallas Mavericks</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/nuggets.html">Denver Nuggets</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/pistons.html">Detroit Pistons</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/warriors.html">Golden State Warriors</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/rockets.html">Houston Rockets</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/pacers.html">Indiana Pacers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/clippers.html">Los Angeles Clippers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/lakers.html">Los Angeles Lakers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/grizzlies.html">Memphis Grizzlies</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/heat.html">Miami Heat</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/bucks.html">Milwaukee Bucks</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/timberwolves.html">Minnesota Timberwolves</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/pelicans.html">New Orleans Pelicans</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/knicks.html">New York Knicks</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/thunder.html">Oklahoma City Thunder</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/magic.html">Orlando Magic</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/76ers.html">Philadelphia 76ers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/suns.html">Phoenix Suns</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/trailblazers.html">Portland Trail Blazers</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/kings.html">Sacramento Kings</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/spurs.html">San Antonio Spurs</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/raptors.html">Toronto Raptors</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/jazz.html">Utah Jazz</a></li>
+      <li><a href="https://thegerbil21.github.io/NBAD/wizards.html">Washington Wizards</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ec6868;">
+    <h2>Search for NBA Teams!</h2>
+    <p>This search tool will allow you to search for your specific NBA team.</p>
+    <p>Simply type your favorite team in the search bar, and click on the link for your team.</p>
+    <p>The frontend will automatically take you to a page diplaying your team's major statistics!</p>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
 </script>
 
-	<!-- Common Tags -->
-    <meta content='#171825' name='theme-color' />
-
-    <meta name="keywords"
-        content="Simple JavaScript Calculator, Harsh, JavaScript, Calculator, JavaScript Calculator, JSCalci, JavaScriptCalci, Harsh Trivedi">
-
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="Simple JavaScript Calculator" />
-    <meta property="og:description"
-        content="Simple JavaScript Calculator by Harsh Trivedi" />
-    <meta property="og:image"
-        content="https://raw.github.com/harsh98trivedi/Simple-JavaScript-Calculator/master/meta.jpg" />
-    <meta property="og:url" content="https://harsh98trivedi.github.io/Simple-JavaScript-Calculator/" />
-    <meta property="og:site_name" content="Simple JavaScript Calculator" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="fb:admins" content="245221532650178" />
-    <meta property="og:type" content="website" />
-    <meta content='https://www.facebook.com/TheHarshTrivedi' property='article:author' />
-    <meta property="og:url" content="https://harsh98trivedi.github.io/Simple-JavaScript-Calculator/" />
-    <!-- Search Engine -->
-    <meta property="description"
-        content="Simple JavaScript Calculator by Harsh Trivedi" />
-    <meta property="image"
-        content="https://raw.github.com/harsh98trivedi/Simple-JavaScript-Calculator/master/meta.jpg" />
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Simple JavaScript Calculator" />
-    <meta itemprop="description"
-        content="Simple JavaScript Calculator by Harsh Trivedi" />
-    <meta itemprop="image"
-        content="https://raw.github.com/harsh98trivedi/Simple-JavaScript-Calculator/master/meta.jpg" />
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Simple JavaScript Calculator" />
-    <meta property="twitter:description"
-        content="Simple JavaScript Calculator by Harsh Trivedi" />
-    <meta property="twitter:creator" content="@harsh98trivedi" />
-    <meta property="twitter:creator:id" content="@harsh98trivedi" />
-    <meta property="twitter:image:src"
-        content="https://raw.github.com/harsh98trivedi/Simple-JavaScript-Calculator/master/meta.jpg" />
-	<meta property="twitter:image" content="Calculator by Harsh Trivedi" />
-	<link rel='icon' type='image/x-icon' href='favicon.png' />
-</head>
-
-<body>
-	<div class="container">
-		<h1><a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem;" href="" onclick="location.reload();">CALCULATOR</a></h1 >
-		<div class="calculator">
-			<input type="text" name="screen" id="answer" readonly>
-			<table>
-				<tr>
-					<td><button>(</button></td>
-					<td><button>)</button></td>
-					<td><button style="background-color: #f01600; font-weight: bold; color: #ecf0f1;">C</button></td>
-					<td><button>%</button></td>
-				</tr>
-				<tr>
-					<td><button>7</button></td>
-					<td><button>8</button></td>
-					<td><button>9</button></td>
-					<td><button>X</button></td>
-				</tr>
-				<tr>
-					<td><button>4</button></td>
-					<td><button>5</button></td>
-					<td><button>6</button></td>
-					<td><button>-</button></td>
-				</tr>
-				<tr>
-					<td><button>1</button></td>
-					<td><button>2</button></td>
-					<td><button>3</button></td>
-					<td><button>+</button></td>
-				</tr>
-				<tr>
-					<td><button>0</button></td>
-					<td><button style="font-weight: bold;">.</button></td>
-					<td><button>/</button></td>
-					<td><button style="background-color: #25db72; font-weight: bold; color: #ecf0f1;">=</button></td>
-				</tr>
-			</table>
-			<hr style="max-width: 50vw;">
-			<div style="font-size:1rem; display: flex; align-items: center; justify-content: center;">Made with <img style="margin: 0.15rem;" src="heart.png">by<a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem;"
-                target="_blank" href="https://harsh98trivedi.github.io">Harsh Trivedi</a></div>
-		</div>
-	</div>
-    <div id="turn">
-    PLEASE TURN YOUR DEVICE
-	</div>
 </body>
-<script src="calc.js"></script>
 </html>
